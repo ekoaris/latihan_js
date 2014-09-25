@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<script type="text/javascript">
+		function setkelamin(jenis){
+			document.getElementById("kelaminmu").value = jenis;
+		}
+		</script>
+	</head>
+	<body>
+		jenis kelamin :
+		<br>
+		<input type="radio" value="laki-laki" name="kelamin" onclick="setkelamin(this.value)">
+		laki-laki<br>
+		<input type="radio" value="perempuan" name="kelamin" onclick="setkelamin(this.value)">
+		perempuan<br>
+		<input type=text id="kelaminmu">
+	</body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<script type="text/javascript">
+		function removeOption(){
+			var x=document.getElementById("mySelect")
+			x.remove(x.selectedIndex)
+			}
+		</script>
+	</head>
+	<body>
+		<form>
+		<select id="mySelect">
+			<option>Apple</option>
+			<option>pear</option>
+			<option>banana</option>
+			<option>orange</option>
+			<option>melon</option>
+		</select>
+		<input type="button" onclick="removeOption()" value="Remove option">
+		</form>
+	</body>
+</html>

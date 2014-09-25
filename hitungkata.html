@@ -1,0 +1,32 @@
+<html>
+
+<head>
+   <title>Menghitung jumlah kata pada textarea</title>
+   <script language="JavaScript">
+      function hitung(masukan, keluaran) {
+         counter = 0;
+         for (i = 0; i < masukan.value.length; i++) {
+            if (masukan.value.charAt(i) == " " &&
+                masukan.value.charAt(i - 1) != " ") {
+               counter++;
+            }
+         }
+         keluaran.value = counter + 1;
+      }
+   </script>
+</head>
+
+<body>
+
+<form name="f1">
+  <table border="1" width="200">
+    <tr><td><textarea name="teks" cols="25" rows="3"
+onKeyDown="hitung(this.form.teks, this.form.jml)"></textarea></td></tr>
+    <tr><td>Jumlah kata: <input type="text" name="jml" size="5"
+value="0"></td></tr>
+  </table>
+</form>
+
+</body>
+
+</html>

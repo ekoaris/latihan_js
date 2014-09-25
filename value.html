@@ -1,0 +1,19 @@
+<html>
+	<head>
+	<script type="text/javascript">
+	function lihatisi(){
+		isi = document.getElementById("teks").value;
+		alert(isi);
+		}
+	function tukarisi(){
+		document.getElementById("teks").value = "Tulisan Ini Diganti";
+		}
+	</script>
+	</head>
+	<body>
+		ketik tulisan dibawah ini :<br>
+		<input type="text" name="teks" id="teks">
+		<input type="button" onclick="lihatisi()" value="lihat">
+		<input type="button" onclick="tukarisi()" value="tukar">
+	</body>
+</html>
